@@ -1,0 +1,13 @@
+[package]
+name = "bzlcfg"
+version = "0.1.0"
+authors = ["Jacob LeGrone <git@jacob.work>"]
+edition = "2018"
+license = "MIT"
+description = "CLI for bazel configuration management"
+
+[dependencies]
+prettytable-rs = "0.8.0"
+serde = "1.0.99"
+structopt = "0.3"
+recap = "0.1.1"
