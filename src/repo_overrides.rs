@@ -3,7 +3,7 @@ use serde::Deserialize;
 use std::io::prelude::*;
 
 #[derive(Debug, Deserialize, Recap)]
-#[recap(regex = r#"build --override_repository=(?P<workspace>\S+)=(?P<path>\S+)"#)]
+#[recap(regex = r#"common --override_repository=(?P<workspace>\S+)=(?P<path>\S+)"#)]
 pub struct OverrideRepository {
     pub workspace: String,
     pub path: String,
