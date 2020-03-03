@@ -99,7 +99,7 @@ fn add_link(path: &mut PathBuf, mut bazelrc: &mut File) -> std::io::Result<()> {
 
     writeln!(
         bazelrc,
-        "build --override_repository={}={}",
+        "common --override_repository={}={}",
         workspace_name,
         workspace_path.to_str().unwrap()
     )
